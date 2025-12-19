@@ -34,10 +34,5 @@
 		"lodash-es": "^4.17.22",
 		"toy-element": "workspace:*",
 		"vue": "^3.5.26"
-	},
-	"pnpm": {
-		"overrides": {
-			"vite": "npm:rolldown-vite@7.2.5"
-		}
 	}
 }
