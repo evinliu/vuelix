@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
 
-      - name: Install pnpm 
+      - name: Install pnpm
         run: npm install -g pnpm
 
       - name: Install dependencies
@@ -47,25 +47,24 @@ jobs:
       - name: Build docs
         run: npm run docs:build
 
-      - name: Upload docs
-        uses: actions/upload-artifact@v4
-        with:
-          name: docs
-          path: ./packages/docs/.vitepress/dist
-
-  deploy:
-    name: Deploy to GitHub Pages
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Download docs
-        uses: actions/download-artifact@v4
-        with:
-          name: docs
-          path: ./dist
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           publish_dir: ./dist
+          name: Deploy to GitHub Pages
+          runs-on: ubuntu-latest
+          needs: build
+          steps:
+      - name: Download docs
+        uses: actions/download-artifact@v4
+        with:
+          name: docs
+          path: ./dist
+      # - name: Upload docs
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: docs
+      #     path: ./packages/docs/.vitepress/dist
+
+  # deploy:
