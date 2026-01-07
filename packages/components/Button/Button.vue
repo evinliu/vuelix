@@ -106,12 +106,12 @@ defineExpose<ButtonInstance>({
 			'is-disabled': disabled,
 			'is-loading': loading,
 		}"
-		:disabled="props.disabled || props.loading"
-		:loading="props.loading"
-		:icon="props.icon"
-		:circle="props.circle"
-		:plain="props.plain"
-		:round="props.round"
+		:disabled="disabled || loading"
+		:loading="loading"
+		:icon="icon"
+		:circle="circle"
+		:plain="plain"
+		:round="round"
 		@click="(e: MouseEvent) => handleClick(e)"
 	>
 		<template v-if="loading">
