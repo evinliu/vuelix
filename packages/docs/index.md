@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: 'Toy-Element'
+  name: 'Vuelix'
   text: '高仿Element Plus组件库'
   tagline: My great project tagline
   actions:

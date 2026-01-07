@@ -1,9 +1,9 @@
 import { setup, type Preview } from '@storybook/vue3-vite';
-// 导入 toy-element 以初始化 fontawesome 和注册所有组件
-import toyElement from 'toy-element';
+// 导入 vuelix 以初始化 fontawesome 和注册所有组件
+import vuelix from 'vuelix';
 
 setup((app) => {
-	app.use(toyElement); // 这会注册所有组件，包括 ErIcon
+	app.use(vuelix); // 这会注册所有组件，包括 ErIcon
 });
 
 const preview: Preview = {

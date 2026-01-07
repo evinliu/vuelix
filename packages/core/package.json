@@ -14,6 +14,7 @@
 	"types": "./dist/types/core/index.d.ts",
 	"exports": {
 		".": {
+			"types": "./dist/types/core/index.d.ts",
 			"import": "./dist/es/index.js",
 			"require": "./dist/umd/index.umd.js"
 		},
