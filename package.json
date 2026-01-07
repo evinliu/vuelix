@@ -1,5 +1,5 @@
 {
-	"name": "@toy-element/workspace",
+	"name": "@vuelix/workspace",
 	"version": "1.0.0",
 	"private": true,
 	"packageManager": "pnpm@10.26.0",
@@ -8,15 +8,15 @@
 		"pnpm": "10.26.0"
 	},
 	"scripts": {
-		"dev": "pnpm --filter @toy-element/play dev",
-		"docs:dev": "pnpm -filter @toy-element/docs dev",
-		"docs:build": "pnpm -filter @toy-element/docs build",
-		"story": "pnpm -filter @toy-element/play storybook",
-		"test": "pnpm --filter @toy-element/components test",
-		"test:ui": "pnpm --filter @toy-element/components test:ui",
-		"test:run": "pnpm --filter @toy-element/components test:run",
-		"test:coverage": "pnpm --filter @toy-element/components test:coverage",
-		"build": "pnpm --filter toy-element build",
+		"dev": "pnpm --filter @vuelix/play dev",
+		"docs:dev": "pnpm -filter @vuelix/docs dev",
+		"docs:build": "pnpm -filter @vuelix/docs build",
+		"story": "pnpm -filter @vuelix/play storybook",
+		"test": "pnpm --filter @vuelix/components test",
+		"test:ui": "pnpm --filter @vuelix/components test:ui",
+		"test:run": "pnpm --filter @vuelix/components test:run",
+		"test:coverage": "pnpm --filter @vuelix/components test:coverage",
+		"build": "pnpm --filter vuelix build",
 		"format": "prettier --write \"packages/**/*.{ts,tsx,vue,js,jsx,json,css,scss,md}\"",
 		"format:check": "prettier --check \"packages/**/*.{ts,tsx,vue,js,jsx,json,css,scss,md}\""
 	},
@@ -47,12 +47,12 @@
 		"@fortawesome/free-regular-svg-icons": "^7.1.0",
 		"@fortawesome/free-solid-svg-icons": "^7.1.0",
 		"@fortawesome/vue-fontawesome": "^3.1.2",
-		"@toy-element/components": "workspace:*",
-		"@toy-element/hooks": "workspace:*",
-		"@toy-element/theme": "workspace:*",
-		"@toy-element/utils": "workspace:*",
+		"@vuelix/components": "workspace:*",
+		"@vuelix/hooks": "workspace:*",
+		"@vuelix/theme": "workspace:*",
+		"@vuelix/utils": "workspace:*",
 		"fp-ts": "^2.16.11",
-		"toy-element": "workspace:*",
+		"vuelix": "workspace:*",
 		"vue": "^3.5.26"
 	}
 }

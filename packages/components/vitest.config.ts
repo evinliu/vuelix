@@ -14,9 +14,9 @@ export default defineConfig({
 	},
 	resolve: {
 		alias: {
-			'@toy-element/components': resolve(__dirname, './'),
-			'@toy-element/utils': resolve(__dirname, '../utils'),
-			'@toy-element/theme': resolve(__dirname, '../theme'),
+			'@vuelix/components': resolve(__dirname, './'),
+			'@vuelix/utils': resolve(__dirname, '../utils'),
+			'@vuelix/theme': resolve(__dirname, '../theme'),
 		},
 	},
 });

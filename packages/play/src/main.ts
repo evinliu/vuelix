@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
-import toyElement from 'toy-element';
+import vuelix from 'vuelix';
 import App from './App.vue';
-import 'toy-element/dist/index.css';
+import 'vuelix/dist/index.css';
 
-createApp(App).use(toyElement).mount('#app');
+createApp(App).use(vuelix).mount('#app');

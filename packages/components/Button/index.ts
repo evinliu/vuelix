@@ -1,4 +1,4 @@
-import { withInstall } from '@toy-element/utils';
+import { withInstall } from '@vuelix/utils';
 import Button from './Button.vue';
 import ButtonGroup from './ButtonGroup.vue';
 

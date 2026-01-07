@@ -3,8 +3,8 @@ import { expect, fn, userEvent, within } from 'storybook/test';
 // import { ErButton, ErButtonGroup } from "eric-ui";
 // import "eric-ui/dist/theme/Button.css";
 
-import { ErButton, ErButtonGroup } from 'toy-element';
-import '@toy-element/components/Button/style.css';
+import { ErButton, ErButtonGroup } from 'vuelix';
+import '@vuelix/components/Button/style.css';
 
 type Story = StoryObj<typeof ErButton> & { argTypes?: ArgTypes };
 

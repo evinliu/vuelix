@@ -56,14 +56,14 @@ export default defineConfig({
 	resolve: {
 		alias: {
 			'@': resolve(__dirname, 'src'),
-			// 开发阶段把 toy-element 指向源码
-			// 'toy-element': resolve(__dirname, '../core/index.ts'),
-			// '@toy-element/components': resolve(__dirname, '../components/index.ts'),
+			// 开发阶段把 vuelix 指向源码
+			// 'vuelix': resolve(__dirname, '../core/index.ts'),
+			// '@vuelix/components': resolve(__dirname, '../components/index.ts'),
 		},
 	},
 	optimizeDeps: {
 		// 告诉 Vite 不要去预构建这些本地包（否则仍然会去动 dist）
-		exclude: ['toy-element', '@toy-element/components'],
+		exclude: ['vuelix', '@vuelix/components'],
 	},
 	test: {
 		projects: [
