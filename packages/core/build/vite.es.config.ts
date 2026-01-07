@@ -11,7 +11,7 @@ const getDirectorySync = (basePath: string) =>
 
 export default defineConfig({
 	plugins: [
-		vue(),
+		vue() as PluginOption,
 		dts({
 			tsconfigPath: '../../tsconfig.build.json',
 			outDir: 'dist/types',
