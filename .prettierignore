@@ -1,0 +1,14 @@
+node_modules
+dist
+dist-ssr
+coverage
+.vitepress/dist
+.vitepress/cache
+*.local
+pnpm-lock.yaml
+auto-imports.d.ts
+.eslintrc-auto-import.json
+storybook-static
+*.log
+
+
