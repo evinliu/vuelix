@@ -1,5 +1,5 @@
 {
-	"name": "@vuelix/workspace",
+	"name": "@atlas-design/workspace",
 	"version": "1.0.0",
 	"private": true,
 	"packageManager": "pnpm@10.26.0",
@@ -8,15 +8,15 @@
 		"pnpm": "10.26.0"
 	},
 	"scripts": {
-		"dev": "pnpm --filter @vuelix/play dev",
-		"docs:dev": "pnpm -filter @vuelix/docs dev",
-		"docs:build": "pnpm -filter @vuelix/docs build",
-		"story": "pnpm -filter @vuelix/play storybook",
-		"test": "pnpm --filter @vuelix/components test",
-		"test:ui": "pnpm --filter @vuelix/components test:ui",
-		"test:run": "pnpm --filter @vuelix/components test:run",
-		"test:coverage": "pnpm --filter @vuelix/components test:coverage",
-		"build": "pnpm --filter vuelix build",
+		"dev": "pnpm --filter @atlas-design/play dev",
+		"docs:dev": "pnpm -filter @atlas-design/docs dev",
+		"docs:build": "pnpm -filter @atlas-design/docs build",
+		"story": "pnpm -filter @atlas-design/play storybook",
+		"test": "pnpm --filter @atlas-design/components test",
+		"test:ui": "pnpm --filter @atlas-design/components test:ui",
+		"test:run": "pnpm --filter @atlas-design/components test:run",
+		"test:coverage": "pnpm --filter @atlas-design/components test:coverage",
+		"build": "pnpm --filter atlas-design build",
 		"format": "prettier --write \"packages/**/*.{ts,tsx,vue,js,jsx,json,css,scss,md}\"",
 		"format:check": "prettier --check \"packages/**/*.{ts,tsx,vue,js,jsx,json,css,scss,md}\""
 	},
@@ -47,12 +47,12 @@
 		"@fortawesome/free-regular-svg-icons": "^7.1.0",
 		"@fortawesome/free-solid-svg-icons": "^7.1.0",
 		"@fortawesome/vue-fontawesome": "^3.1.2",
-		"@vuelix/components": "workspace:*",
-		"@vuelix/hooks": "workspace:*",
-		"@vuelix/theme": "workspace:*",
-		"@vuelix/utils": "workspace:*",
+		"@atlas-design/components": "workspace:*",
+		"@atlas-design/hooks": "workspace:*",
+		"@atlas-design/theme": "workspace:*",
+		"@atlas-design/utils": "workspace:*",
 		"fp-ts": "^2.16.11",
-		"vuelix": "workspace:*",
+		"atlas-design": "workspace:*",
 		"vue": "^3.5.26"
 	}
 }

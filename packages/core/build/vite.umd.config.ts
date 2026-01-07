@@ -7,7 +7,7 @@ export default defineConfig({
 		outDir: 'dist/umd',
 		lib: {
 			entry: 'index.ts',
-			name: 'ToyElement',
+			name: 'AtlasDesign',
 			fileName: 'index',
 			formats: ['umd'],
 		},

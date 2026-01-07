@@ -1,4 +1,4 @@
-import { withInstall } from '@vuelix/utils';
+import { withInstall } from '@atlas-design/utils';
 import Button from './Button.vue';
 import ButtonGroup from './ButtonGroup.vue';
 

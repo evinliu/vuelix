@@ -56,14 +56,14 @@ export default defineConfig({
 	resolve: {
 		alias: {
 			'@': resolve(__dirname, 'src'),
-			// 开发阶段把 vuelix 指向源码
-			// 'vuelix': resolve(__dirname, '../core/index.ts'),
-			// '@vuelix/components': resolve(__dirname, '../components/index.ts'),
+			// 开发阶段把 atlas-design 指向源码
+			// 'atlas-design': resolve(__dirname, '../core/index.ts'),
+			// '@atlas-design/components': resolve(__dirname, '../components/index.ts'),
 		},
 	},
 	optimizeDeps: {
 		// 告诉 Vite 不要去预构建这些本地包（否则仍然会去动 dist）
-		exclude: ['vuelix', '@vuelix/components'],
+		// exclude: ['atlas-design', '@atlas-design/components'],
 	},
 	test: {
 		projects: [

@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue';
 import { defineConfig, type PluginOption } from 'vite';
 import dts from 'vite-plugin-dts';
 
-const getDirectorySync = (basePath: string) => 
+const getDirectorySync = (basePath: string) =>
 	readdirSync(resolve(basePath), { withFileTypes: true })
 		.filter((d) => d.isDirectory())
 		.map((d) => d.name);
@@ -21,13 +21,14 @@ export default defineConfig({
 		outDir: 'dist/es',
 		lib: {
 			entry: 'index.ts',
-			name: 'ToyElement',
+			name: 'AtlasDesign',
 			fileName: 'index',
 			formats: ['es'],
 		},
 		rollupOptions: {
 			external: [
 				'vue',
+				'@atlas-design/theme',
 				'@fortawesome/fontawesome-svg-core',
 				'@fortawesome/free-brands-svg-icons',
 				'@fortawesome/free-regular-svg-icons',

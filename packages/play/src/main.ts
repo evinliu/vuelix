@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
-import vuelix from 'vuelix';
+import atlasDesign from 'atlas-design';
 import App from './App.vue';
-import 'vuelix/dist/index.css';
+import 'atlas-design/dist/index.css';
 
-createApp(App).use(vuelix).mount('#app');
+createApp(App).use(atlasDesign).mount('#app');

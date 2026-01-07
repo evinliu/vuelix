@@ -14,9 +14,9 @@ export default defineConfig({
 	},
 	resolve: {
 		alias: {
-			'@vuelix/components': resolve(__dirname, './'),
-			'@vuelix/utils': resolve(__dirname, '../utils'),
-			'@vuelix/theme': resolve(__dirname, '../theme'),
+			'@atlas-design/components': resolve(__dirname, './'),
+			'@atlas-design/utils': resolve(__dirname, '../utils'),
+			'@atlas-design/theme': resolve(__dirname, '../theme'),
 		},
 	},
 });

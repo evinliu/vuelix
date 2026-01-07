@@ -22,14 +22,14 @@ function getRepoName(): string {
 		// 如果获取失败，使用默认值
 		console.warn('无法获取仓库名，使用默认值');
 	}
-	return 'vuelix'; // 默认值
+	return 'atlas-design'; // 默认值
 }
 
 const repoName = getRepoName();
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-	title: 'Vuelix',
+	title: 'Atlas Design',
 	description: '高仿Element Plus组件库',
 	base: `/${repoName}/`,
 	themeConfig: {

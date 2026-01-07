@@ -8,6 +8,18 @@ importers:
 
   .:
     dependencies:
+      '@atlas-design/components':
+        specifier: workspace:*
+        version: link:packages/components
+      '@atlas-design/hooks':
+        specifier: workspace:*
+        version: link:packages/hooks
+      '@atlas-design/theme':
+        specifier: workspace:*
+        version: link:packages/theme
+      '@atlas-design/utils':
+        specifier: workspace:*
+        version: link:packages/utils
       '@fortawesome/fontawesome-svg-core':
         specifier: ^7.1.0
         version: 7.1.0
@@ -23,27 +35,15 @@ importers:
       '@fortawesome/vue-fontawesome':
         specifier: ^3.1.2
         version: 3.1.2(@fortawesome/fontawesome-svg-core@7.1.0)(vue@3.5.26(typescript@5.9.3))
-      '@vuelix/components':
+      atlas-design:
         specifier: workspace:*
-        version: link:packages/components
-      '@vuelix/hooks':
-        specifier: workspace:*
-        version: link:packages/hooks
-      '@vuelix/theme':
-        specifier: workspace:*
-        version: link:packages/theme
-      '@vuelix/utils':
-        specifier: workspace:*
-        version: link:packages/utils
+        version: link:packages/core
       fp-ts:
         specifier: ^2.16.11
         version: 2.16.11
       vue:
         specifier: ^3.5.26
         version: 3.5.26(typescript@5.9.3)
-      vuelix:
-        specifier: workspace:*
-        version: link:packages/core
     devDependencies:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: ^4.7.0

@@ -6,7 +6,7 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { makeInstall } from './../utils/install';
 import { components } from './components';
-import '@vuelix/theme/index.css';
+import '@atlas-design/theme/index.css';
 
 library.add(fas, far, fab);
 

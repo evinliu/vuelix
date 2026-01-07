@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: 'Vuelix'
+  name: 'Atlas Design'
   text: '高仿Element Plus组件库'
   tagline: My great project tagline
   actions:
