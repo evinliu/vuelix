@@ -1,4 +1,4 @@
-import { ErButton } from "@toy-element/components"
-import type { Plugin } from "vue"
+import type { Plugin } from 'vue';
+import { ErButton, ErButtonGroup, ErIcon } from '@toy-element/components';
 
-export const components: Plugin[] = [ErButton]
+export const components: Plugin[] = [ErButton, ErButtonGroup, ErIcon];

@@ -1,8 +1,16 @@
+/* add fontawesome core */
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+/* import all the icons in Free Solid, Free Regular, and Brands styles */
+import { fas } from '@fortawesome/free-solid-svg-icons';
 import { makeInstall } from './../utils/install';
-import { components } from './components'
-import '@toy-element/theme/index.css'
+import { components } from './components';
+import '@toy-element/theme/index.css';
 
-const installer = makeInstall(components)
+library.add(fas, far, fab);
 
-export default installer
-export * from '@toy-element/components'
+const installer = makeInstall(components);
+
+export default installer;
+export * from '../components';
