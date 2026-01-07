@@ -54,7 +54,9 @@ describe('Button.vue', () => {
 				default: 'loading button',
 			},
 			global: {
-				stubs: ['ErIcon'],
+				components: {
+					ErIcon: Icon,
+				},
 			},
 		});
 
@@ -69,14 +71,16 @@ describe('Button.vue', () => {
 		wrapper.get('button').trigger('click');
 		expect(wrapper.emitted()).not.toHaveProperty('click');
 
-		// icon
+		// icon - 验证 loading icon 存在
 		const iconElement = wrapper.findComponent(Icon);
 		expect(iconElement.exists()).toBeTruthy();
+		expect(wrapper.find('.loading-icon').exists()).toBe(true);
 		// loadingIcon 可以是字符串 'spinner' 或数组 ['fas', 'spinner']，FontAwesome 都支持
 		const iconProp = iconElement.props('icon');
 		const isSpinner =
 			iconProp === 'spinner' ||
 			(Array.isArray(iconProp) && iconProp[1] === 'spinner') ||
+			(Array.isArray(iconProp) && iconProp[0] === 'fas' && iconProp[1] === 'spinner') ||
 			(typeof iconProp === 'string' && iconProp.includes('spinner'));
 		expect(isSpinner).toBeTruthy();
 	});
@@ -186,7 +190,9 @@ describe('Button.vue', () => {
 		const wrapper = mount(Button, {
 			props: { loading: true },
 			global: {
-				stubs: ['ErIcon'],
+				components: {
+					ErIcon: Icon,
+				},
 			},
 		});
 		const iconElement = wrapper.findComponent(Icon);
@@ -198,6 +204,7 @@ describe('Button.vue', () => {
 		const isSpinner =
 			iconProp === 'spinner' ||
 			(Array.isArray(iconProp) && iconProp[1] === 'spinner') ||
+			(Array.isArray(iconProp) && iconProp[0] === 'fas' && iconProp[1] === 'spinner') ||
 			(typeof iconProp === 'string' && iconProp.includes('spinner'));
 		expect(isSpinner).toBeTruthy();
 		await wrapper.trigger('click');
