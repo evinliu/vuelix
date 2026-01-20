@@ -24,12 +24,14 @@
 		}
 	},
 	"scripts": {
-		"build": "run-s build-only move-style",
+		"build": "run-s clean build-only move-style",
 		"build-only": "run-p build-esm build-umd",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build-umd": "vite build --config build/vite.umd.config.ts",
 		"build-esm": "vite build --config build/vite.es.config.ts",
-		"move-style": "move-file dist/es/index.css dist/index.css"
+		"move-style": "move-file dist/es/index.css dist/index.css",
+		"clean": "rimraf dist",
+		"release": "release-it"
 	},
 	"keywords": [],
 	"author": "",
