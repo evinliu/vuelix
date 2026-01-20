@@ -1,6 +1,6 @@
 {
 	"name": "atlas-design",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "",
 	"type": "module",
 	"files": [
@@ -30,8 +30,7 @@
 		"build-umd": "vite build --config build/vite.umd.config.ts",
 		"build-esm": "vite build --config build/vite.es.config.ts",
 		"move-style": "move-file dist/es/index.css dist/index.css",
-		"clean": "rimraf dist",
-		"release": "release-it"
+		"clean": "rimraf dist"
 	},
 	"keywords": [],
 	"author": "",

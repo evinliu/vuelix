@@ -18,9 +18,13 @@
 		"test:coverage": "pnpm --filter @atlas-design/components test:coverage",
 		"build": "pnpm --filter atlas-design build",
 		"format": "prettier --write \"packages/**/*.{ts,tsx,vue,js,jsx,json,css,scss,md}\"",
-		"format:check": "prettier --check \"packages/**/*.{ts,tsx,vue,js,jsx,json,css,scss,md}\""
+		"format:check": "prettier --check \"packages/**/*.{ts,tsx,vue,js,jsx,json,css,scss,md}\"",
+		"changeset": "changeset",
+		"version": "changeset version",
+		"release": "pnpm build && changeset publish"
 	},
 	"devDependencies": {
+		"@changesets/cli": "^2.29.8",
 		"@ianvs/prettier-plugin-sort-imports": "^4.7.0",
 		"@types/lodash-es": "^4.17.12",
 		"@types/node": "^20.19.27",
@@ -35,7 +39,6 @@
 		"postcss-for": "^2.1.1",
 		"postcss-nested": "^6.2.0",
 		"prettier": "^3.7.4",
-		"release-it": "^19.2.3",
 		"rimraf": "^6.1.2",
 		"typescript": "^5.9.3",
 		"unplugin-auto-import": "^0.17.5",
