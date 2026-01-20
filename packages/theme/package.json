@@ -1,6 +1,7 @@
 {
 	"name": "@atlas-design/theme",
 	"version": "1.0.0",
+	"private": true,
 	"description": "",
 	"main": "index.css",
 	"scripts": {
